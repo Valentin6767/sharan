@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volkswagen Sharan 2005</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#f4f4f4;
+            color:#222;
+            line-height:1.6;
+        }
+
+        header{
+            background:linear-gradient(to right,#0d1b2a,#1b263b);
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        header h1{
+            font-size:48px;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:20px;
+        }
+
+        nav{
+            background:#415a77;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffd60a;
+        }
+
+        .hero{
+            height:500px;
+            background:url('https://upload.wikimedia.org/wikipedia/commons/5/5d/VW_Sharan_front_20080825.jpg') center/cover no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+        }
+
+        .hero h2{
+            font-size:50px;
+            background:rgba(0,0,0,0.6);
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:50px 0;
+        }
+
+        section{
+            margin-bottom:60px;
+        }
+
+        section h2{
+            color:#0d1b2a;
+            margin-bottom:20px;
+            border-left:6px solid #415a77;
+            padding-left:15px;
+        }
+
+        .about p{
+            font-size:18px;
+        }
+
+        .specs{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            border-radius:10px;
+            height:220px;
+            object-fit:cover;
+            box-shadow:0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            background:white;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        table th, table td{
+            border:1px solid #ccc;
+            padding:15px;
+            text-align:center;
+        }
+
+        table th{
+            background:#1b263b;
+            color:white;
+        }
+
+        footer{
+            background:#0d1b2a;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#1b263b;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#415a77;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Volkswagen Sharan 2005</h1>
+        <p>Proiect Web realizat în HTML & CSS</p>
+    </header>
+
+    <nav>
+        <a href="#despre">Despre</a>
+        <a href="#specificatii">Specificații</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#avantaje">Avantaje</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Confort • Spațiu • Fiabilitate</h2>
+    </section>
+
+    <div class="container">
+
+        <section id="despre" class="about">
+            <h2>Despre Mașină</h2>
+            <p>
+                Volkswagen Sharan 2005 este un automobil de tip MPV produs de Volkswagen,
+                conceput special pentru familii și călătorii lungi. Modelul oferă un interior
+                spațios, confort ridicat și motoare eficiente. Datorită fiabilității și consumului
+                redus, Sharan a devenit una dintre cele mai apreciate mașini familiale din Europa.
+            </p>
+
+            <a href="#" class="btn">Află Mai Mult</a>
+        </section>
+
+        <section id="specificatii">
+            <h2>Specificații Tehnice</h2>
+
+            <div class="specs">
+
+                <div class="card">
+                    <h3>Motor</h3>
+                    <p>1.9 TDI Diesel</p>
+                </div>
+
+                <div class="card">
+                    <h3>Putere</h3>
+                    <p>115 CP</p>
+                </div>
+
+                <div class="card">
+                    <h3>Viteză Maximă</h3>
+                    <p>181 km/h</p>
+                </div>
+
+                <div class="card">
+                    <h3>Consum</h3>
+                    <p>6-7 L / 100 km</p>
+                </div>
+
+                <div class="card">
+                    <h3>Locuri</h3>
+                    <p>7 locuri</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cutie de viteze</h3>
+                    <p>Manuală / Automată</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie Foto</h2>
+
+            <div class="gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/VW_Sharan_front_20080825.jpg" alt="VW Sharan">
+                
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/VW_Sharan_rear_20080825.jpg" alt="VW Sharan spate">
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/VW_Sharan_2005.jpg" alt="VW Sharan lateral">
+            </div>
+        </section>
+
+        <section id="avantaje">
+            <h2>Avantaje și Dezavantaje</h2>
+
+            <table>
+                <tr>
+                    <th>Avantaje</th>
+                    <th>Dezavantaje</th>
+                </tr>
+
+                <tr>
+                    <td>Interior foarte spațios</td>
+                    <td>Dimensiuni mari pentru oraș</td>
+                </tr>
+
+                <tr>
+                    <td>Consum redus la diesel</td>
+                    <td>Întreținere mai costisitoare</td>
+                </tr>
+
+                <tr>
+                    <td>Ideal pentru familie</td>
+                    <td>Model mai vechi</td>
+                </tr>
+
+                <tr>
+                    <td>Fiabilitate bună</td>
+                    <td>Unele piese sunt scumpe</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Proiect Volkswagen Sharan 2005 | Realizat de Valentin</p>
+    </footer>
+
+</body>
+</html>
